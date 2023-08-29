@@ -1,4 +1,4 @@
-package com.example.videocallapp.ui
+package com.example.videocallapp.ui.activity
 
 import android.Manifest
 import android.content.pm.PackageManager

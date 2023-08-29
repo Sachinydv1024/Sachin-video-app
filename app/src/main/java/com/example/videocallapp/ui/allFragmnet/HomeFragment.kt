@@ -15,13 +15,13 @@ import com.example.videocallapp.alladapter.VideoAdapter
 import com.example.videocallapp.api.ApiService
 import com.example.videocallapp.api.RetrofitClient
 import com.example.videocallapp.databinding.FragmentHomeBinding
-import com.example.videocallapp.repo.MemesRepo
-import com.example.videocallapp.viewmodel.MemesViewModel
-import com.example.videocallapp.viewmodel.MemesViewModelFactory
+import com.example.videocallapp.repo.VideoRepo
+import com.example.videocallapp.viewmodel.VideoViewModel
+import com.example.videocallapp.viewmodel.VideoViewModelFactory
 
 class HomeFragment() : Fragment() {
     private lateinit var adapter: VideoAdapter
-    private lateinit var memesViewModel: MemesViewModel
+    private lateinit var videoViewModel: VideoViewModel
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
@@ -42,11 +42,11 @@ class HomeFragment() : Fragment() {
 
         val apiinterface = RetrofitClient.getInstance().create(ApiService::class.java)
 
-        val memesRepo = MemesRepo(apiinterface)
+        val videoRepo = VideoRepo(apiinterface)
 
-        memesViewModel =
-            ViewModelProvider(this, MemesViewModelFactory(memesRepo))[MemesViewModel::class.java]
-        memesViewModel.meme.observe(viewLifecycleOwner) {
+        videoViewModel =
+            ViewModelProvider(this, VideoViewModelFactory(videoRepo))[VideoViewModel::class.java]
+        videoViewModel.video.observe(viewLifecycleOwner) {
             Log.d("TAG", "onCreate: ${it.get(0).video_url}")
             adapter = VideoAdapter(it)
             val snapHelper = PagerSnapHelper()

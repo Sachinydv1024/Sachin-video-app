@@ -2,11 +2,11 @@ package com.example.videocallapp.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.videocallapp.repo.MemesRepo
+import com.example.videocallapp.repo.VideoRepo
 
-class MemesViewModelFactory(private val memesRepo: MemesRepo) : ViewModelProvider.Factory {
+class VideoViewModelFactory(private val videoRepo: VideoRepo) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return MemesViewModel(memesRepo) as T
+        return VideoViewModel(videoRepo) as T
     }
 
 }

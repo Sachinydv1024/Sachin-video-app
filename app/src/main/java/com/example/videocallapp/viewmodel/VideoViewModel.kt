@@ -4,19 +4,19 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.videocallapp.model.VideoDataModel
-import com.example.videocallapp.repo.MemesRepo
+import com.example.videocallapp.repo.VideoRepo
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class MemesViewModel(private val memesRepo: MemesRepo) : ViewModel() {
+class VideoViewModel(private val videoRepo: VideoRepo) : ViewModel() {
 
     init {
         viewModelScope.launch(Dispatchers.IO) {
-            memesRepo.getMemes()
+            videoRepo.getMemes()
         }
     }
 
-    val meme: LiveData<List<VideoDataModel>>
-        get() = memesRepo.memes
+    val video: LiveData<List<VideoDataModel>>
+        get() = videoRepo.video
 
 }

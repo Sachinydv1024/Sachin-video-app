@@ -1,4 +1,4 @@
-package com.example.videocallapp.ui
+package com.example.videocallapp.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
