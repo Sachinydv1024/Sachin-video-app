@@ -1,14 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.allFragmnet.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_profile" />
+
+        <!-- User's Name -->
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilePicture"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="John Doe"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Bio -->
+        <TextView
+            android:id="@+id/userBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp"
+            android:text="Software Developer | Travel Enthusiast"
+            android:textSize="14sp" />
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/editProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userBio"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Edit Profile" />
+
+        <!-- Posts, Followers, and Following Sections -->
+        <LinearLayout
+            android:id="@+id/statsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editProfileButton"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Posts: 150"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Followers: 5.5K"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Following: 300"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Additional Sections (e.g., Posts, Albums, etc.) -->
+        <!-- You can add more sections as needed -->
+
+
+
+
+</RelativeLayout>

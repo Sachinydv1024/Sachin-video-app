@@ -42,7 +42,6 @@
             android:layout_marginStart="153dp"
             android:layout_marginTop="46dp"
             android:gravity="center"
-            android:onClick="joinChannel"
             android:text="Join" />
 
         <Button
@@ -53,7 +52,6 @@
             android:layout_below="@+id/remote_video_view_container"
             android:layout_alignEnd="@id/remote_video_view_container"
             android:layout_marginTop="40dp"
-            android:onClick="leaveChannel"
             android:text="Leave" />
     </RelativeLayout>
 
