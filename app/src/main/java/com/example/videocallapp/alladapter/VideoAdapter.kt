@@ -31,6 +31,10 @@ class VideoAdapter(private val videoList: List<VideoDataModel>) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(video: VideoDataModel) {
 
+            binding.apply {
+
+            }
+
             if (video.video_url.isNotEmpty()) {
                 binding.progressBar.visibility = View.GONE
             } else {
