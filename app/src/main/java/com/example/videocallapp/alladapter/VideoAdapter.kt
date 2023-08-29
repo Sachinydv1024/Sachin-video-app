@@ -31,10 +31,13 @@ class VideoAdapter(private val videoList: List<VideoDataModel>) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(video: VideoDataModel) {
 
+            if (video.video_url.isNotEmpty()) {
+                binding.progressBar.visibility = View.GONE
+            } else {
+                binding.progressBar.visibility = View.VISIBLE
+            }
 
-//
             binding.videoView.apply {
-
                 setVideoPath(video.video_url)
                 setOnPreparedListener { mp ->
                     mp.start()
@@ -53,11 +56,6 @@ class VideoAdapter(private val videoList: List<VideoDataModel>) :
                 }
             }
 
-            if (video.video_url.isNotEmpty()) {
-                binding.progressBar.visibility = View.GONE
-            } else {
-                binding.progressBar.visibility = View.VISIBLE
-            }
 
 // Play button click listener
             // Play button click listener
