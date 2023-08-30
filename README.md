@@ -68,8 +68,8 @@ Contributions are welcome! If you find any issues or want to enhance the app, fe
 
 ## License
 
-This project is licensed under the [License Name] - see the [LICENSE](LICENSE) file for details.
+This project is free to use.
 
 ## Contact
 
-Have questions or suggestions? Feel free to reach out to [Your Name] via [Your Contact Info].
+Have questions or suggestions? Feel free to reach out to Sumit or harnoor via linkdin.
