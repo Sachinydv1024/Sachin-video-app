@@ -29,7 +29,7 @@ Follow these steps to get started with the project:
 
 ## Dependencies
 
-//agora for video call and live streaming
+    //agora for video call and live streaming
     implementation("io.agora.rtc:full-sdk:4.0.1")
     implementation("commons-codec:commons-codec:1.9")
 
@@ -46,13 +46,13 @@ Follow these steps to get started with the project:
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
 
-//for api call retrofit
+     //for api call retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
-//for video playing
+     //for video playing
     implementation("com.google.android.exoplayer:exoplayer-core:2.15.0")
     implementation("com.google.android.exoplayer:exoplayer-ui:2.15.0")
 
