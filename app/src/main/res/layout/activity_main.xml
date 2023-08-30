@@ -8,11 +8,6 @@
     tools:context=".ui.activity.MainActivity">
 
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/pulseRecyclerview"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_70sdp"
-        android:orientation="horizontal" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment"
@@ -20,7 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_navigation"
-        android:layout_below="@+id/pulseRecyclerview"
         app:defaultNavHost="true"
         app:navGraph="@navigation/nav_graph" />
 

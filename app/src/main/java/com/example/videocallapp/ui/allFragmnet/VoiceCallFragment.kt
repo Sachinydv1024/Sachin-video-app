@@ -42,7 +42,7 @@ class VoiceCallFragment : Fragment() {
     private val appId = "5fb926599aeb4ba391c29247cc3b6f71"
 
     // Fill the channel name.
-    private val channelName = "papayacoders"
+    private val channelName = "sumitrai"
 
     var appCertificate = "b5065fbfa5ed4d8aba0c25de974502b1"
 
@@ -137,10 +137,10 @@ class VoiceCallFragment : Fragment() {
     fun joinLeaveChannel() {
         if (isJoined) {
             agoraEngine!!.leaveChannel()
-            binding.joinLeaveButton!!.text = "Join"
+           // binding.joinLeaveButton!!.text = "Join"
         } else {
             joinChannel()
-            binding.joinLeaveButton!!.text = "Leave"
+          // binding.joinLeaveButton!!.text = "Leave"
         }
     }
 

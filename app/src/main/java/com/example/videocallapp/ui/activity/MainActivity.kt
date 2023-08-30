@@ -23,8 +23,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var binding: ActivityMainBinding
-    private lateinit var adapter: PulseAdapter
-    private lateinit var videoViewModel: VideoViewModel
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setupRecyclerview()
+
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
@@ -48,24 +47,5 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-    }
-
-    private fun setupRecyclerview() {
-        val apiinterface = RetrofitClient.getInstance().create(ApiService::class.java)
-
-        val videoRepo = VideoRepo(apiinterface)
-
-        videoViewModel =
-            ViewModelProvider(this, VideoViewModelFactory(videoRepo))[VideoViewModel::class.java]
-        videoViewModel.video.observe(this) {
-            Log.d("TAG", "onCreate: ${it.get(0).video_url}")
-            adapter = PulseAdapter(it , this)
-            val snapHelper = PagerSnapHelper()
-            snapHelper.attachToRecyclerView(binding.pulseRecyclerview)
-            binding.pulseRecyclerview.layoutManager =
-                LinearLayoutManager(this, RecyclerView.HORIZONTAL, false)
-            binding.pulseRecyclerview.adapter = adapter
-
-        }
     }
 }

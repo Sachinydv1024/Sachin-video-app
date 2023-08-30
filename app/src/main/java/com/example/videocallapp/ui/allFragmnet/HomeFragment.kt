@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.example.videocallapp.alladapter.PulseAdapter
 import com.example.videocallapp.alladapter.VideoAdapter
 import com.example.videocallapp.api.ApiService
 import com.example.videocallapp.api.RetrofitClient
@@ -23,6 +24,9 @@ class HomeFragment() : Fragment() {
     private lateinit var adapter: VideoAdapter
     private lateinit var videoViewModel: VideoViewModel
     private var _binding: FragmentHomeBinding? = null
+
+    private lateinit var pulseAdapter: PulseAdapter
+
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,7 +42,7 @@ class HomeFragment() : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        setupRecyclerview()
 
         val apiinterface = RetrofitClient.getInstance().create(ApiService::class.java)
 
@@ -57,5 +61,22 @@ class HomeFragment() : Fragment() {
 
         }
 
+    }
+
+    private fun setupRecyclerview() {
+        val apiinterface = RetrofitClient.getInstance().create(ApiService::class.java)
+
+        val videoRepo = VideoRepo(apiinterface)
+
+        videoViewModel =
+            ViewModelProvider(this, VideoViewModelFactory(videoRepo))[VideoViewModel::class.java]
+        videoViewModel.video.observe(viewLifecycleOwner) {
+            Log.d("TAG", "onCreate: ${it.get(0).video_url}")
+            pulseAdapter = PulseAdapter(it)
+            binding.pulseRecyclerview.layoutManager =
+                LinearLayoutManager(context, RecyclerView.HORIZONTAL, false)
+            binding.pulseRecyclerview.adapter = pulseAdapter
+
+        }
     }
 }

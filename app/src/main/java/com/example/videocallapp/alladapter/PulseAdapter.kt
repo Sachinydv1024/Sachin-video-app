@@ -10,7 +10,7 @@ import com.example.videocallapp.model.VideoDataModel
 import com.squareup.picasso.Picasso
 
 
-class PulseAdapter(private val videoList: List<VideoDataModel>, private val context: Context) :
+class PulseAdapter(private val videoList: List<VideoDataModel>) :
     RecyclerView.Adapter<PulseAdapter.ImageViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
