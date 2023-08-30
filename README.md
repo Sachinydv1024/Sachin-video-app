@@ -29,14 +29,36 @@ Follow these steps to get started with the project:
 
 ## Dependencies
 
--  //agora for video call and live streaming
+//agora for video call and live streaming
     implementation("io.agora.rtc:full-sdk:4.0.1")
     implementation("commons-codec:commons-codec:1.9")
--    //for splash screen animation lottie animation
+
+    //for splash screen animation lottie animation
     implementation("com.airbnb.android:lottie:3.4.0")
-//implementation for dynamic dp
+
+    //implementation for dynamic dp
     implementation("com.intuit.sdp:sdp-android:1.1.0")
-- ...
+
+    //for chat
+    implementation("io.agora.rtc:chat-sdk:1.1.0")
+
+    //navigation gra[h
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
+
+//for api call retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+
+//for video playing
+    implementation("com.google.android.exoplayer:exoplayer-core:2.15.0")
+    implementation("com.google.android.exoplayer:exoplayer-ui:2.15.0")
+
+    //for image loading
+    implementation("com.facebook.fresco:fresco:3.0.0")
+    implementation("com.squareup.picasso:picasso:2.8")
 
 ## Contributing
 
