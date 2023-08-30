@@ -72,6 +72,8 @@ dependencies {
 
     implementation("com.google.android.exoplayer:exoplayer-core:2.15.0")
     implementation("com.google.android.exoplayer:exoplayer-ui:2.15.0")
+    implementation("com.facebook.fresco:fresco:3.0.0")
+    implementation("com.squareup.picasso:picasso:2.8")
 
 
 }

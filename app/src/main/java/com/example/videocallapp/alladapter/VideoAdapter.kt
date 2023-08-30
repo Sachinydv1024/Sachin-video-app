@@ -1,5 +1,6 @@
 package com.example.videocallapp.alladapter
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -40,6 +41,8 @@ class VideoAdapter(private val videoList: List<VideoDataModel>) :
             } else {
                 binding.progressBar.visibility = View.VISIBLE
             }
+
+            Log.d("TAG", "bindsddssddd" + video.image_url)
 
             binding.videoView.apply {
                 setVideoPath(video.video_url)
