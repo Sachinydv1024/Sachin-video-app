@@ -6,10 +6,10 @@ Welcome to **My Awesome App**! This repository hosts the source code for an amaz
 
 ## Features
 
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
-- ...
+- Conncet People with Live Stream and Video call
+- Login with google securly
+- Voice calling
+- Video feed like tik tok
 
 ## Screenshots
 
