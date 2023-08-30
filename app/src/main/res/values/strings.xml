@@ -22,4 +22,5 @@
     <string name="app_key">41117440#383391</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello Home fragment</string>
+    <string name="default_web_client_id">648427871782-b9detro57rl84pqejcb8k2o0iobslg27.apps.googleusercontent.com</string>
 </resources>

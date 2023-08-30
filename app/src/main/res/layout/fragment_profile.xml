@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.allFragmnet.ProfileFragment">
 
 
@@ -75,6 +76,7 @@
                 android:layout_marginEnd="16dp" />
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Following: 300"
@@ -85,7 +87,14 @@
         <!-- Additional Sections (e.g., Posts, Albums, etc.) -->
         <!-- You can add more sections as needed -->
 
-
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statsLayout"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/commingsoon" />
 
 
 </RelativeLayout>

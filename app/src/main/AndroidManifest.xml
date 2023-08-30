@@ -24,7 +24,7 @@
         android:theme="@style/Theme.VideoCallApp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activity.LoginSignupActivity"
+            android:name=".ui.activity.SplashScreen"
             android:exported="false" />
         <activity
             android:name=".ui.activity.ChatActivity"
@@ -36,7 +36,7 @@
             android:name=".ui.activity.LiveVideoCallActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.SplashScreen"
+            android:name=".ui.activity.LoginSignupActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
