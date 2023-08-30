@@ -29,8 +29,13 @@ Follow these steps to get started with the project:
 
 ## Dependencies
 
-- [Dependency 1]
-- [Dependency 2]
+-  //agora for video call and live streaming
+    implementation("io.agora.rtc:full-sdk:4.0.1")
+    implementation("commons-codec:commons-codec:1.9")
+-    //for splash screen animation lottie animation
+    implementation("com.airbnb.android:lottie:3.4.0")
+//implementation for dynamic dp
+    implementation("com.intuit.sdp:sdp-android:1.1.0")
 - ...
 
 ## Contributing
