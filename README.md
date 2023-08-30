@@ -2,6 +2,14 @@
 
 Welcome to **My Awesome App**! This repository hosts the source code for an amazing Android app that [briefly describe what your app does].
 
+![GitHub Cards Preview](https://firebasestorage.googleapis.com/v0/b/snapchat-f2264.appspot.com/o/Title_and_3_Columns%5B1%5D.png?alt=media&token=c6dc3d48-d4b2-48ea-ba29-7e752619f95a)
+
+###  
+App Name                   | Describe                  | Tech Stack             | Google Play 
+:------------------------: | :------------------------ | :------------------------: | :------------------------: 
+Snapchat Clone | Video Call is an application where one can share and watch short videos, make friends globally and also can snap pics by applying digital filters. | Android, Kotlin, Firebase, Glide, CameraX, Material UI, Navigation Component | [![Get it on Google Play](https://firebasestorage.googleapis.com/v0/b/snapchat-f2264.appspot.com/o/T9HnFlW.png?alt=media&token=b46055e4-3b02-424f-9e88-862543831a8b)](https://play.google.com/store/apps/details?id=com.angel.snapchat)
+
+
 ![App Screenshots](screenshots.png)
 
 ## Features
