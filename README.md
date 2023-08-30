@@ -62,7 +62,7 @@ Follow these steps to get started with the project:
 
     ## Here are the some screenshots of the cloned application
 
-![GitHub Cards Preview](https://firebasestorage.googleapis.com/v0/b/snapchat-f2264.appspot.com/o/Untitled%20design%20(10).png?alt=media&token=7f964f75-90e9-4807-ba4c-92ee1edfea62)
+![GitHub Cards Preview](https://github.com/sumit2607/VideoCallApp/blob/master/Screenshot_20230830_133211.png)
 ![GitHub Cards Preview](https://firebasestorage.googleapis.com/v0/b/snapchat-f2264.appspot.com/o/Untitled%20design%20(11).png?alt=media&token=b2d77b36-3019-482e-a37e-e25f0d62a45b)
 
 ## Contributing
