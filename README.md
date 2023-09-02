@@ -1,8 +1,12 @@
 # VideoCallApp
 
-Welcome to **My Awesome App**! This repository hosts the source code for an amazing Android app that [briefly describe what your app does].
+Welcome to **My Video Call App**! This repository hosts the source code for an amazing Android app that.
 
-![App Screenshots](screenshots.png)
+
+###  
+App Name                   | Describe                  | Tech Stack             | Google Play 
+:------------------------: | :------------------------ | :------------------------: | :------------------------: 
+Video Call | Video Call is an application where one can share and watch short videos, make friends globally. | Android, Kotlin, Firebase, Glide, CameraX, Material UI, Navigation Component | [![Get it on Google Play](https://firebasestorage.googleapis.com/v0/b/snapchat-f2264.appspot.com/o/T9HnFlW.png?alt=media&token=b46055e4-3b02-424f-9e88-862543831a8b)](https://play.google.com/store/apps/details?id=com.angel.snapchat)
 
 ## Features
 
@@ -11,21 +15,14 @@ Welcome to **My Awesome App**! This repository hosts the source code for an amaz
 - Voice calling
 - Video feed like tik tok
 
-## Screenshots
-
-Here are some screenshots from the app:
-
-![Screenshot 1](/screenshots/screenshot1.png)
-![Screenshot 2](/screenshots/screenshot2.png)
-![Screenshot 3](/screenshots/screenshot3.png)
-
 ## Getting Started
 
-Follow these steps to get started with the project:
 
-1. [Instructions for setting up the development environment]
-2. [Instructions for running the app]
-3. ...
+## Instructions to clone this project ✌
+1. Open Android Studio.
+2. Go to File > New > Project From Version Control.
+3. Copy the link of this repositary.
+4. Paste the link in Url Box of Android Studio window and click on "Clone" button..
 
 ## Dependencies
 
@@ -62,8 +59,8 @@ Follow these steps to get started with the project:
 
     ## Here are the some screenshots of the cloned application
 
-![GitHub Cards Preview](https://github.com/sumit2607/VideoCallApp/blob/master/Screenshot_20230830_133211.png)
-![GitHub Cards Preview](https://firebasestorage.googleapis.com/v0/b/snapchat-f2264.appspot.com/o/Untitled%20design%20(11).png?alt=media&token=b2d77b36-3019-482e-a37e-e25f0d62a45b)
+![GitHub Cards Preview](https://github.com/sumit2607/VideoCallApp/blob/master/1.jpeg)
+![GitHub Cards Preview](https://github.com/sumit2607/VideoCallApp/blob/master/2.jpeg)
 
 ## Contributing
 
@@ -71,8 +68,8 @@ Contributions are welcome! If you find any issues or want to enhance the app, fe
 
 ## License
 
-This project is licensed under the [License Name] - see the [LICENSE](LICENSE) file for details.
+This project is free to use.
 
 ## Contact
 
-Have questions or suggestions? Feel free to reach out to [Your Name] via [Your Contact Info].
+Have questions or suggestions? Feel free to reach out to Sumit or harnoor via linkdin.
