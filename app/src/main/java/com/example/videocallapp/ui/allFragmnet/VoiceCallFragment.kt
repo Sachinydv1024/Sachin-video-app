@@ -39,12 +39,14 @@ class VoiceCallFragment : Fragment() {
     var expirationTimeInSeconds = 3600
 
     // Fill the App ID of your project generated on Agora Console.
-    private val appId = "5fb926599aeb4ba391c29247cc3b6f71"
+
+    private val appId = "163b6ef0dd474e538ae3aaea0de60f9f"
+
+    var appCertificate = "c503b234242047bb9d969f80e2eec9db"
 
     // Fill the channel name.
     private val channelName = "sumitrai"
 
-    var appCertificate = "b5065fbfa5ed4d8aba0c25de974502b1"
 
     // Fill the temp token generated on Agora Console.
     private var token: String? = null
@@ -137,10 +139,10 @@ class VoiceCallFragment : Fragment() {
     fun joinLeaveChannel() {
         if (isJoined) {
             agoraEngine!!.leaveChannel()
-           // binding.joinLeaveButton!!.text = "Join"
+            // binding.joinLeaveButton!!.text = "Join"
         } else {
             joinChannel()
-          // binding.joinLeaveButton!!.text = "Leave"
+            // binding.joinLeaveButton!!.text = "Leave"
         }
     }
 

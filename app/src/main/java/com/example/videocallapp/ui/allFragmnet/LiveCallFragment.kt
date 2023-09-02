@@ -22,9 +22,9 @@ import io.agora.rtc2.video.VideoCanvas
 
 class LiveCallFragment : Fragment() {
 
-    private val appId = "5fb926599aeb4ba391c29247cc3b6f71"
+    private val appId = "163b6ef0dd474e538ae3aaea0de60f9f"
 
-    var appCertificate = "b5065fbfa5ed4d8aba0c25de974502b1"
+    var appCertificate = "c503b234242047bb9d969f80e2eec9db"
     var expirationTimeInSeconds = 3600
     private val channelName = "sumit"
 
